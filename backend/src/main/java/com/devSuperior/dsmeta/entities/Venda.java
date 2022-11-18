@@ -1,5 +1,6 @@
 package com.devSuperior.dsmeta.entities;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -30,7 +31,7 @@ public class Venda {
 	private Double amount;
 	
 	@Column(name="date")
-	private Date date;
+	private LocalDate date;
 	
 	
 	public Venda() {
@@ -68,10 +69,10 @@ public class Venda {
 	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
-	public Date getDate() {
+	public LocalDate getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
+	public void setDate(LocalDate date) {
 		this.date = date;
 	}
 }
