@@ -4,6 +4,6 @@ export type Sales = {
     deals : number;
     id : number;
     sellerName : String;
-    date : String;
+    date : Date;
     visited : number;
 }
